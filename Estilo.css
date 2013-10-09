@@ -1,0 +1,220 @@
+/* reset global */
+
+	/* http://meyerweb.com/eric/tools/css/reset/ 
+	   v2.0 | 20110126
+	   License: none (public domain) */
+	
+	html, body, div, span, applet, object, iframe,
+	h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+	a, abbr, acronym, address, big, cite, code,
+	del, dfn, em, img, ins, kbd, q, s, samp,
+	small, strike, strong, sub, sup, tt, var,
+	b, u, i, center,
+	dl, dt, dd, ol, ul, li,
+	fieldset, form, label, legend,
+	table, caption, tbody, tfoot, thead, tr, th, td,
+	article, aside, canvas, details, embed, 
+	figure, figcaption, footer, header, hgroup, 
+	menu, nav, output, ruby, section, summary,
+	time, mark, audio, video {
+		margin: 0;
+		padding: 0;
+		border: 0;
+		font-size: 100%;
+		font: inherit;
+		vertical-align: baseline;
+	}
+	/* HTML5 display-role reset for older browsers */
+	article, aside, details, figcaption, figure, 
+	footer, header, hgroup, menu, nav, section {
+		display: block;
+	}
+	body {
+		line-height: 1;
+	}
+	ol, ul {
+		list-style: none;
+	}
+	blockquote, q {
+		quotes: none;
+	}
+	blockquote:before, blockquote:after,
+	q:before, q:after {
+		content: '';
+		content: none;
+	}
+	table {
+		border-collapse: collapse;
+		border-spacing: 0;
+	}
+	
+/* Clearfix */
+
+.cf:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+ 
+.cf {
+	display: inline-block;
+}
+ 
+html[xmlns] .cf {
+	display: block;
+}
+ 
+* html .cf {
+	height: 1%;
+}
+
+/* Generales*/
+
+	body{
+		
+	}
+	
+	a:link    {color:black;}
+	a:visited {color:black;}
+	a:hover   {text-decoration: underline;}
+	a:active  {color:#cc0000;}
+	
+/*Cabecera*/
+	
+	header{
+		display: block;
+		width: 100%;
+	}
+	
+	hr {
+    border: 0,05px solid black;
+    margin-left: 1%;
+    margin-right: 1%;
+    width: 98%;
+    margin-top: 125px;
+	}
+	
+	/* Menú informativo */
+	
+	.informativo ul {
+	     padding: 0	260px;
+	     list-style-type: none;
+		 margin: 0px;
+		 width: 100%;
+		 opacity: 1;
+		 }
+		 
+	.informativo ul li {
+	     position: relative;
+		 float: left;
+		 width: 150px;
+	    }
+	    
+	 .informativo ul li:hover a {
+	     display: block;
+		 color: white;					     
+		}
+	 
+	 .informativo ul li a {
+	    display: block;
+	    color: white;
+	    text-decoration: none;
+		background-color: black;
+		opacity: 0.8;
+		text-align: center;
+		}
+	 
+	 .informativo ul li a:hover {
+		background-color: #211819;
+		opacity: 1;
+		}
+					 
+	
+	header a:link    {color:#F7F7F2;}
+	header a:visited {color:#F7F7F2;}
+	header a:hover   {color:#F7F7F2;}
+	header a:active  {color:#F7F7F2;}
+	
+	
+/*Cuerpo*/
+	.contenedor{
+		width: 100%;
+	}
+	
+
+	/*Caja de búsqueda*/
+		
+		#search {
+		margin-left: 1%;
+		
+		}
+		
+		#search input[type="text"] {
+		    background: url("img/search-white.png") no-repeat 3px 3px #fcfcfc;
+		    border: 1px solid #d1d1d1;
+		    font: 12px Helvetica,Arial,Sans-serif;
+		    color: #bebebe;
+		    width: 200px;
+		    padding: 3px 3px 3px 30px;
+		    -webkit-transition: all 0.7s ease 0s;
+		    -moz-transition: all 0.7s ease 0s;
+		    -o-transition: all 0.7s ease 0s;
+		    transition: all 0.7s ease 0s;
+		    }
+		
+		#search input[type="text"]:focus {
+		    width: 200px;
+		    }
+		    
+	/*Menú Interactivo*/
+	
+	.interactivo ul {
+	     padding: 0;
+	     list-style-type: none;
+		 margin: 1%;
+		 width: 100%;
+		 opacity: 1;
+		 color: black;					     
+
+		 }
+		 
+	.interactivo ul li {
+		 width: 150px;
+	    }
+	    
+	 .interactivo ul li:hover a {
+		}
+	 
+	 .interactivo ul li a {
+	    text-decoration: none;
+		opacity: 0.8;
+		text-align: left;
+		}
+	 
+	 .interactivo ul li a:hover {
+		 text-decoration: underline;
+		 color: black;
+		}
+					 
+	
+	.interactivo a:link    {color:black;}
+	.interactivo a:visited {color:black;}
+	.interactivo a:hover   {color:black;}
+	.interactivo a:active  {color:red;}
+	
+/*Pie de página*/
+	
+footer{
+	background-color: #2b2b2b;
+	width: 100%;
+	float: left;
+	color: #fff;
+}
+
+footer a:link    {color:#F7F7F2;}
+footer a:visited {color:#F7F7F2;}
+footer a:hover   {color:#F7F7F2;}
+footer a:active  {color:#F7F7F2;}
